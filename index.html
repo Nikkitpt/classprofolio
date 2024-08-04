@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Musical Web Summer 2024</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Profolio</title>
-    <style>   
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: black;
-        }
-
-        .content {
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }     
-    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.35/Tone.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script type="module" src="script.js"></script>  
-</script>
+    <div id="grid-wrapper">
+        <img src="assets/oscilloscope.png" alt="oscilloscope" id="oscilloscope-img" draggable="false">
+        <div id="screen">
+            <img src="assets/musicalwebsummer2024.png" alt="Musical Web Summer 2024" id="title" draggable="false">
+            <canvas id="woscope-canvas"></canvas>
+            <img src="assets/musicalwebsummer2024.png" alt="Musical Web Summer 2024" id="title" draggable="false">
+        </div>
+        <div id="menu">
+            <div id="projects-grid">
+                <div id="info"><img id="info-btn" src="assets/buttons/btn-info.png" draggable="false"></div>
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="btn" title="project title by artist" src="assets/buttons/btn1.png" draggable="false">
+                <img id="sounds-text" src="assets/sounds.png" draggable="false">
+            </div>
+            <div id="sounds-grid">
+                <div id="sound-img1"><img id="sound-btn1" src="assets/buttons/btn2.png" draggable="false"></div>
+                <div id="sound-img2"><img id="sound-btn2" src="assets/buttons/btn2.png" draggable="false"></div>
+                <div id="sound-img3"><img id="sound-btn3" src="assets/buttons/btn2.png" draggable="false"></div>
+                <div id="sound-img4"><img id="sound-btn4" src="assets/buttons/btn2.png" draggable="false"></div>
+                <audio id="myAudio1" src="assets/audio/placeholder.mp3"></audio>
+                <audio id="myAudio2" src="assets/audio/musicalweb.wav"></audio>
+                <audio id="myAudio3" src=""></audio>
+                <audio id="myAudio4" src=""></audio>
+            </div>
+        </div>
+        <div id="off"><img id="off-btn" src="assets/buttons/off-btn.png" draggable="false"></div>
+    </body>
+    </html>
+    <script src="woscope.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
