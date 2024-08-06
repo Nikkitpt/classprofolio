@@ -36,11 +36,20 @@ html, body {
 /* Oscilloscope Screen */
 #screen {
     position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: black;
     grid-column: 2/3;
     grid-row: 3/4;
+    justify-content: center;
     width: 100%;
     height: 100%;
+    z-index: 99999999999;
+    padding: 10px;
+}
+
+iframe {
+    border: none;
 }
 
 #title {
